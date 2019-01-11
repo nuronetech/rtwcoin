@@ -1,0 +1,26 @@
+# /etc/conf.d/ariad: config file for /etc/init.d/ariad
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/aria/aria.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/ariad"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/ariad.pid"
+
+# Where to write ariad data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/ariad"
+
+# User and group to own ariad process
+#BITCOIND_USER="aria"
+#BITCOIND_GROUP="aria"
+
+# Path to ariad executable
+#BITCOIND_BIN="/usr/bin/ariad"
+
+# Nice value to run ariad under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

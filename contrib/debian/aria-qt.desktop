@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=AriA
+Comment=AriA P2P Cryptocurrency
+Comment[fr]=AriA, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=AriA, eşten eşe kriptografik sanal para birimi
+Exec=aria-qt %u
+Terminal=false
+Type=Application
+Icon=aria128
+MimeType=x-scheme-handler/aria;
+Categories=Office;Finance;

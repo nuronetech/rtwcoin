@@ -1,0 +1,11 @@
+[Protocol]
+exec=aria-qt '%u'
+protocol=aria
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

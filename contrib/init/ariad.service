@@ -1,0 +1,26 @@
+[Unit]
+Description=AriA's distributed currency daemon
+After=network.target
+
+[Service]
+User=aria
+Group=aria
+
+Type=forking
+PIDFile=/var/lib/ariad/ariad.pid
+
+ExecStart=/usr/bin/ariad -daemon -pid=/var/lib/ariad/ariad.pid \
+          -conf=/etc/aria/aria.conf -datadir=/var/lib/ariad
+
+ExecStop=-/usr/bin/aria-cli -conf=/etc/aria/aria.conf \
+         -datadir=/var/lib/ariad stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
