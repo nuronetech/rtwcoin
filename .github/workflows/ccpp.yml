@@ -10,8 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: chmod
-      run: chmod 777 -R fresh_install.sh
-    - name: fresh-install
+      run: chmod 777 -R fresh-install.sh
+    - name: fresh-instal.sh
       run: ./fresh-install.sh
     - name: make check
       run: make check
